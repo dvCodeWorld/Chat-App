@@ -1,0 +1,31 @@
+<section>
+    <div fxLayout="column" fxLayoutAlign="center center" class="card-center">
+        <div class="auth-container">
+            <div class="brand-container">
+                <div class="brand-wrapper center">
+                    <img src="assets/images/logo.png" alt="" height="80px">
+                </div>
+            </div>
+            <div class="auth-form">
+                <div class="auth-otp-heading center">
+                    Send OTP  to <span class="fs-18 fw-500 blue pl-1">{{userEmail}}</span>
+                </div>
+                <form >
+                    <div class="auth-form-wrapper">
+                        <form>
+                            <div fxLayout="column" fxLayoutAlign="center center" class="OTP-fileds">
+                                <ng-otp-input #ngOtpInput (onInputChange)="onOtpChange($event)" [config]="{ length:4, allowNumbersOnly:true }"></ng-otp-input>
+                                <p *ngIf="otpWillSent"><a href="#">Resend code in </a><span> {{otpTimeLimit}} </span>s</p>
+                                <div class="ml-auto my-3">
+                                    <a href="javascript:;" class="fs-12 slaty">Resend OTP</a>
+                                </div>
+                                <button [disabled]="disableBtn" (click)="otpVerify()" type="submit" mat-raised-button class="auth-submit-btn">Verify <span *ngIf="!disableBtn">👍</span></button>
+                            </div>
+                        </form>
+                       
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,53 @@
+<section>
+    <div class="card-center user-details update-profile">
+        <div class="profile">
+            <div class="update-dp">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp" width="90px" height="90px" alt="">
+                <button>
+                    <mat-icon>edit</mat-icon>
+                </button>
+            </div>
+            <p class="fs-20 fw-600 m-0 line-height-24">Pankaj Kumar</p>
+        </div>
+        <form [formGroup]="updateProfileForm" (ngSubmit)="updateProfile()">
+            <div class="update-profile-wrapper">
+                <div class="form-group">
+                    <label for="about">About</label>
+                    <mat-form-field appearance="outline">
+                        <input type="about" formControlName="about" matInput placeholder="I am using Green App">
+                    </mat-form-field>
+                </div>
+                <div class="form-group">
+                    <label for="email">Name</label>
+                    <mat-form-field appearance="outline">
+                        <input type="text" formControlName="name" matInput placeholder="pankaj.k@greenapp.com">
+                    </mat-form-field>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <mat-form-field appearance="outline">
+                        <input type="number" formControlName="mobile_no" matInput placeholder="+91 9111525164">
+                    </mat-form-field>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of birth</label>
+                    <mat-form-field appearance="outline">
+                        <input matInput [matDatepicker]="picker" placeholder="14-11-1999">
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                    </mat-form-field>
+                </div>
+                <div class="form-group">                  
+                    <mat-radio-group aria-label="Select an option">
+                        <mat-radio-button value="Male">Male ♂</mat-radio-button>
+                        <mat-radio-button value="Female">Female ♀</mat-radio-button>
+                    </mat-radio-group>
+                </div>
+
+                <div class="center mt-2">
+                    <button mat-button class="auth-submit-btn" type="submit">Update profile</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>

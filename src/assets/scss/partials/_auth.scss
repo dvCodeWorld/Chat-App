@@ -1,0 +1,72 @@
+.card-center {
+  min-height: 100vh;
+  height: auto;
+  max-width: 467px;
+  min-width: 280px;
+  margin: 0 auto;
+
+  .auth-container {
+    width: 100%;
+    width: -webkit-fill-available;
+    padding: 2rem;
+
+    .brand-container {
+      .brand-wrapper {
+        width: 100%;
+        padding-bottom: 1rem;
+      }
+    }
+
+    .auth-form {
+      .auth-heading {
+        font-size: 24px;
+        font-weight: 600;
+        padding: 1rem 10px;
+      }
+      //====Start====only for OTP Screen 
+      .auth-otp-heading{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+      }
+      .otp-input{
+        outline-color: $green !important;
+      }
+      //=====End====only for OTP Screen 
+      &-wrapper {
+        margin-top: 2rem;
+        .form-group {
+          display: flex;
+          flex-direction: column;
+
+          label {
+            color: $slaty;
+            margin-bottom: 8px;
+          }
+          .eye {
+            color: $green !important;
+          }
+        }
+        .auth-submit-btn {
+          // width: 60%;
+          width: 100%;
+          font-size: 18px;
+          font-weight: 400;
+          background: $green;
+          color: $white;
+          border: 3px solid #eceef1;
+          border-radius: 12px;
+          padding: 4px 0;
+        }
+      }
+    }
+  }
+}
+
+// Media query
+@media only screen and (max-width: 280px) {
+  .auth-container {
+    padding: 1rem !important;
+  }
+}

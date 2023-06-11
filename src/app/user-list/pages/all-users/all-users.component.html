@@ -1,0 +1,48 @@
+<section>
+    <div class="search">
+        <form [formGroup]="searchForm">
+            <input type="text" placeholder="Search" formControlName="name" (keyup)="search($event)">
+        </form>
+    </div>
+</section>
+<section>
+    <div class="all-users">
+        <mat-tab-group animationDuration="0ms">
+            <mat-tab label="Chats">
+                <div class="all-users-container" >
+                    <div class="user-wrapper d-flex-v" *ngFor="let user of allUsers" [routerLink]="['/Users/user-detail/',_utilityService.base64Encode(user?._id)]">
+                        <div class="mr-3">
+                            <img src="../../../../assets/images/avtar.jpg" class="userDP" alt="User-Dp">
+                        </div>
+                        <div>
+                            <p class="fs-16 fw-500 m-0">{{user?.name}}</p>
+                            <span class="slaty fs-14 fw-400">I am using Green App</span>
+                        </div>
+                        <div class="d-flex-v ml-auto">
+                            <!-- <img src="assets/icons/green-tick.svg" width="16px" alt="Request Sent"> -->
+                            <span class="fs-12 ml-2">{{user?.createdAt | date}}</span>
+                        </div>
+                    </div>
+                </div>
+            </mat-tab>
+            <mat-tab label="Status">
+                <div class="all-users-container center">
+                    Status will Showed Here ...                  
+                </div>
+            </mat-tab>
+            <mat-tab label="Groups">
+                <div class="all-users-container center">
+                    Groups will Showed Here ...                    
+                </div>
+            </mat-tab>
+            <mat-tab label="Friends">
+                <div class="all-users-container center">
+                    Friends will Showed Here ...                  
+                </div>
+            </mat-tab>
+          </mat-tab-group>
+          <mat-paginator *ngIf="userCount > 10" (page)="getPage($event)" [length]="userCount" [pageIndex]="pageIndex"
+            [pageSize]="10">
+        </mat-paginator>
+    </div>
+</section>

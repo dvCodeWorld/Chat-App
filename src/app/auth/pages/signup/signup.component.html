@@ -1,0 +1,54 @@
+<section>
+    <div fxLayout="column" fxLayoutAlign="center center" class="card-center">
+        <div class="auth-container">
+            <div class="brand-container">
+                <div class="brand-wrapper center">
+                    <img src="assets/images/logo.png" alt="" height="80px">
+                </div>
+            </div>
+            <div class="auth-form">
+                <div class="auth-heading center">
+                    Sign in to your account
+                </div>
+                <form (ngSubmit)="signUpForm.valid && signup()" [formGroup]="signUpForm">
+                    <div class="auth-form-wrapper">
+                        <div class="form-group">
+                            <label for="name">Name*</label>
+                            <mat-form-field appearance="outline">
+                                <input type="text" id="name" matInput  placeholder="Pankaj Kalmya" formControlName="name">
+                                <mat-error>
+                                   Email Address is Required
+                                </mat-error>
+                            </mat-form-field>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email*</label>
+                            <mat-form-field appearance="outline">
+                                <input type="email" id="email" matInput  placeholder="Email" formControlName="email">
+                                <mat-error>
+                                   Email Address is Required
+                                </mat-error>
+                            </mat-form-field>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password*</label>
+                            <mat-form-field appearance="outline">
+                                <input [type]="hide? 'password':'text'" id="password" matInput  placeholder="******" formControlName="password">
+                                <mat-icon matSuffix class="eye" (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                                <mat-error>
+                                  Password is Required
+                                </mat-error>
+                            </mat-form-field>
+                        </div>
+                        <div class="center">
+                            <button mat-button class="auth-submit-btn">Sign Up</button>
+                        </div>
+                        <div class="center mt-4">
+                            <a routerLink="/auth/login"  class="fs-14 black">Already have an account? <span class="green fw-500">Login</span> </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

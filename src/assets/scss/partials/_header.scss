@@ -1,0 +1,13 @@
+.header {
+    &-content {
+      padding: 10px 0;
+      color: $green;
+      .brand-text {
+              line-height: 15px;
+      }
+      mat-icon{
+        width: 18px;
+      }
+    }
+  }
+  
