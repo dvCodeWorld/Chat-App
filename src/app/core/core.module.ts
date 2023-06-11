@@ -5,7 +5,6 @@ import { ProjectLayoutComponent } from './layouts/project-layout/project-layout.
 import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
 import { ConfirmationPopupComponent } from './components/confirmation-popup/confirmation-popup.component'
-import { FlexLayoutModule } from '@angular/flex-layout';
 import { PageNotfoundComponent } from './components/page-notfound/page-notfound.component';
 import { HttpClientModule } from '@angular/common/http'
 import { HeaderComponent } from './components/header/header.component';
@@ -27,13 +26,11 @@ import { CommonModule } from '@angular/common';
     CommonModule,
     RouterModule,
     SharedModule,
-    FlexLayoutModule,
     HttpClientModule
   ],
   exports: [
     RouterModule,
     SharedModule,
-    FlexLayoutModule,
     HttpClientModule,
     HeaderComponent
   ]

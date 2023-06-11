@@ -5,8 +5,7 @@ import { SignupComponent } from './pages/signup/signup.component';
 import { AuthLayoutComponent } from './auth-layout/auth-layout.component';
 import { RouterModule } from '@angular/router';
 import { AuthRoutingModule } from './auth-routing.module';
-import { SharedModule } from '../shared/shared.module'
-import { FlexLayoutModule } from '@angular/flex-layout';
+import { SharedModule } from '../shared/shared.module';
 import { OtpVerifiedComponent } from './pages/otp-verified/otp-verified.component';
 import { NgOtpInputModule } from 'ng-otp-input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -30,7 +29,6 @@ import { ForgotPasswordComponent } from './pages/forgot-password/forgot-password
     AuthRoutingModule,
     RouterModule,
     SharedModule,
-    FlexLayoutModule,
     NgOtpInputModule,
     ReactiveFormsModule,
     FormsModule,

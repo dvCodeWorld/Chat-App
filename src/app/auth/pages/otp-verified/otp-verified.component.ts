@@ -1,6 +1,5 @@
 import { HttpResponse } from '@angular/common/http';
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { mergeAlias } from '@angular/flex-layout';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { NgOtpInputComponent } from 'ng-otp-input';
