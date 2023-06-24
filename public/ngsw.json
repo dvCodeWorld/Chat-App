@@ -1,0 +1,129 @@
+{
+  "configVersion": 1,
+  "timestamp": 1686593700420,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/247.b26fc3bed8f39ee5.js",
+        "/644.b86f2e983b8b8c6f.js",
+        "/705.6af5e1998b65a07e.js",
+        "/common.03c7ec662b502e18.js",
+        "/index.html",
+        "/main.66aea8df6f0134d3.js",
+        "/manifest.webmanifest",
+        "/polyfills.c3a1c0dcd82fb687.js",
+        "/runtime.59ba3c6212325681.js",
+        "/styles.34b02c958eb0d59e.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/assets/icons/birthday-cake-black-icon.svg",
+        "/assets/icons/doubel-tick-green.svg",
+        "/assets/icons/doubel-tick-grey.svg",
+        "/assets/icons/favicon.png",
+        "/assets/icons/green-tick.svg",
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/icons/mail-black-icon.svg",
+        "/assets/icons/searchicon.png",
+        "/assets/icons/single-tick.svg",
+        "/assets/icons/user-black-icon.svg",
+        "/assets/images/Default/you-dont-have-msg.svg",
+        "/assets/images/avtar.jpg",
+        "/assets/images/logo-old.png",
+        "/assets/images/logo.png",
+        "/assets/scss/partials/_auth.scss",
+        "/assets/scss/partials/_global-classes.scss",
+        "/assets/scss/partials/_global.scss",
+        "/assets/scss/partials/_header.scss",
+        "/assets/scss/partials/_project-layout.scss",
+        "/assets/scss/partials/_users.scss",
+        "/assets/scss/partials/_vars.scss",
+        "/favicon.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/247.b26fc3bed8f39ee5.js": "f24087981ffa1d12b70d912e9fabfb684c563f06",
+    "/644.b86f2e983b8b8c6f.js": "ca8c0a1e120ace2a0e3da18d6c0b083ff5c2207b",
+    "/705.6af5e1998b65a07e.js": "a0595cbef74855a429a6ba92c8c9ff7481ac5e00",
+    "/assets/icons/birthday-cake-black-icon.svg": "0a3a98ff42b08f68bc20c30cda530c9d552670e7",
+    "/assets/icons/doubel-tick-green.svg": "771ff36f9485429dd7250dd08b13b52e5a65cd64",
+    "/assets/icons/doubel-tick-grey.svg": "e16dd39f9c3a998f9326aea4c06d3bb93726bf48",
+    "/assets/icons/favicon.png": "72b30b169c9c4058ad821bebd140af1817d2f71c",
+    "/assets/icons/green-tick.svg": "0c0b880cbe6b69fc6c36a6068d942265de5958c9",
+    "/assets/icons/icon-128x128.png": "8cc5de4e6be7b995eb7e80af7eed5b32ca984ee7",
+    "/assets/icons/icon-144x144.png": "cdcf681f87b710dc42c7e1221d3738e1d5d6e03f",
+    "/assets/icons/icon-152x152.png": "32c3b9e2df0651f5accf18f7d055148aca39142d",
+    "/assets/icons/icon-192x192.png": "fdd8398993b06af43df1e5e3aabef2e47bb89d00",
+    "/assets/icons/icon-384x384.png": "b0a0184b3e182b726aad1c7f5178f8aff7c7a5c2",
+    "/assets/icons/icon-512x512.png": "6a1894f2064ec2b50cc5124c7cc7875be97dcbc7",
+    "/assets/icons/icon-72x72.png": "72b30b169c9c4058ad821bebd140af1817d2f71c",
+    "/assets/icons/icon-96x96.png": "9a4bae87c4d12852d4464ff0ee7f7b4dbfbb346d",
+    "/assets/icons/mail-black-icon.svg": "47636240b15d261831413e6ecdfe004280539fcf",
+    "/assets/icons/searchicon.png": "be243180910e3bb5fa094c36f80556bc2be146c5",
+    "/assets/icons/single-tick.svg": "2f985cff8b8e2b13239b91322bace248bd8fe9d8",
+    "/assets/icons/user-black-icon.svg": "6b4d65b7280b950d6705c8c528fdf28a11e53a3f",
+    "/assets/images/Default/you-dont-have-msg.svg": "8358ee278adba6fbad628cc90090a3b53990dda5",
+    "/assets/images/avtar.jpg": "20f83d2af4e555533293745e21646951b4bb9bff",
+    "/assets/images/logo-old.png": "cfcb1a9923d574709d77c856d09af2d041347943",
+    "/assets/images/logo.png": "b254f1630338823e6e59f5a5229e90fd62caee59",
+    "/assets/scss/partials/_auth.scss": "a71a805656e4613654e85d7b93804ffaf174c616",
+    "/assets/scss/partials/_global-classes.scss": "6e515187415d01fd428b2170c516f1e45fe78832",
+    "/assets/scss/partials/_global.scss": "f8b22c33cc778c6b7d142584beb50419c2fdfe0a",
+    "/assets/scss/partials/_header.scss": "5247a2c95e1411825a38589edea0a6bc86afc1f0",
+    "/assets/scss/partials/_project-layout.scss": "548563ca2deca23bc5ea184bd19d731aae7f6652",
+    "/assets/scss/partials/_users.scss": "659f00283cd7cf968093ab4d631a5fee4fd0c9b8",
+    "/assets/scss/partials/_vars.scss": "bf4584e6e13e17c8fa5681ef25fa1a8ce46d4744",
+    "/common.03c7ec662b502e18.js": "3485ffcf66098fa42e74d402e419a16dc6522e8b",
+    "/favicon.png": "cbff911246d32be2abdcf7d715ecd2bfbdaf96b9",
+    "/index.html": "6e520378a4f4d0d79685037136c4cda57852f234",
+    "/main.66aea8df6f0134d3.js": "83a7b3cbeecf318581b132937cb549219569bf36",
+    "/manifest.webmanifest": "d3b2fd1c3af2d954ee1c0b1f8b9cbdb311002a90",
+    "/polyfills.c3a1c0dcd82fb687.js": "5155928c013137fb4b21d35ac9f582e3f8c601f7",
+    "/runtime.59ba3c6212325681.js": "48e861894be494cf26c57d1c15458b214ad4a795",
+    "/styles.34b02c958eb0d59e.css": "2135cac60b350c2af365c3cb513d21895800d1de"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}

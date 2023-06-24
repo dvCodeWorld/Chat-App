@@ -172,18 +172,18 @@
             </mat-tab>
         </mat-tab-group>
         <div class="bottom-menu-container">
-            <div class="bottom-menu d-flex-all" routerLink="/Users/all-users">
+            <button class="bottom-menu d-flex-all" [ngClass]="{'menu-pop-first': menuClicked, 'menu-pop-first-rev': menuClose}"  routerLink="/Users/all-users">
                 <mat-icon>groups</mat-icon>
-            </div>
-            <div class="bottom-menu d-flex-all">
+            </button>
+            <button class="bottom-menu d-flex-all" [ngClass]="{'menu-pop-second': menuClicked, 'menu-pop-second-rev': menuClose}">
                 <mat-icon>mood</mat-icon>
-            </div>
-            <div class="bottom-menu d-flex-all">
+            </button>
+            <button class="bottom-menu d-flex-all" [ngClass]="{'menu-pop-third': menuClicked, 'menu-pop-third-rev': menuClose}">
                 <mat-icon>sentiment_very_dissatisfied</mat-icon>
-            </div>
-            <div class="bottom-menu d-flex-all">
+            </button>
+            <button class="bottom-menu d-flex-all" (click)="popUpMenu()">
                 <mat-icon>add</mat-icon>
-            </div>
+            </button>
         </div>
     </div>
 </section>

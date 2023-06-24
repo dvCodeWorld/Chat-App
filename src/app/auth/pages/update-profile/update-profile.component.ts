@@ -12,6 +12,7 @@ import { UtilityService } from 'src/app/core/utility/utility.service';
 })
 export class UpdateProfileComponent implements OnInit {
   updateProfileForm!: FormGroup
+  public userName!:any;
   constructor(
     private _baseService: BaseService,
     private _authService: AuthService,
@@ -26,15 +27,19 @@ export class UpdateProfileComponent implements OnInit {
       dob: new FormControl(''),
       gender: new FormControl('')
     });
+
+    this.userName = localStorage.getItem('user_token');
+    this.userName = this.userName.split(",")
+
   }
 
   updateProfile(){
-    this._authService.updateProfile(this.updateProfileForm.value).subscribe({
-      next: (response:any) => {
-        console.log(response);
-        this._utilityService.toastSuccess(response?.message);
-      }
-    })
+    // this._authService.updateProfile(this.updateProfileForm.value).subscribe({
+    //   next: (response:any) => {
+    //     console.log(response);
+    //     this._utilityService.toastSuccess(response?.message);
+    //   }
+    // })
   }
 
 }

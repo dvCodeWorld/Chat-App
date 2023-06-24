@@ -34,7 +34,7 @@ const Material: any = [
   MatPaginatorModule,
   MatDatepickerModule,
   MatNativeDateModule,
-  MatRadioModule
+  MatRadioModule,
 ];
 
 @NgModule({

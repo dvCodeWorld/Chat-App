@@ -1,0 +1,12 @@
+// Chrome Auto Fill Color Remove
+input:-webkit-autofill {
+  -webkit-background-clip: text;
+}
+// For all anchor tag
+a {
+  text-decoration: none !important;
+}
+// Global input outline changed to green from black
+input {
+  outline-color: $green !important;
+}

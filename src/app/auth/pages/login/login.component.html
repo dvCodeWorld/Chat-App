@@ -16,10 +16,13 @@
                         <div class="form-group">
                             <label for="email">Email*</label>
                             <mat-form-field  appearance="outline">
-                                <input type="email" formControlName="email" matInput  placeholder="Email">
-                                <mat-error>
+                                <input type="email" formControlName="email" matInput placeholder="Email">
+                                <mat-error *ngIf="loginForm.controls['email']?.hasError('required')">
                                    Email Address is Required
                                 </mat-error>
+                                <mat-error   *ngIf="loginForm.controls['email']?.hasError('validateEmail') && !loginForm.controls['email']?.hasError('required')">
+                                    Email Address is Not Valid
+                                 </mat-error>
                             </mat-form-field>
                         </div>
                         <div class="form-group">
@@ -27,9 +30,15 @@
                             <mat-form-field  appearance="outline">
                                 <input [type]="hide? 'password':'text'" formControlName="password" matInput  placeholder="******">
                                 <mat-icon matSuffix class="eye" (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-                                <mat-error>
+                                <mat-error *ngIf="loginForm.controls['password']?.hasError('required')">
                                   Password is Required
                                 </mat-error>
+                                <mat-error *ngIf="loginForm.controls['password']?.hasError('minlength') && !loginForm.controls['password']?.hasError('required')">
+                                    It must be 4 digit !
+                                 </mat-error>
+                                 <mat-error *ngIf="loginForm.controls['password']?.hasError('maxlength') && !loginForm.controls['password']?.hasError('minlength') && !loginForm.controls['password']?.hasError('required')">
+                                    It must not be more than 10 digit 
+                                 </mat-error>
                             </mat-form-field>
                         </div>
                         <div class="right mb-5">

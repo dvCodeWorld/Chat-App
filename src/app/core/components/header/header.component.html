@@ -1,13 +1,11 @@
 <div class="header p-3">
     <div class="header-content d-flex-h-space-between">
         <span *ngIf="true"><mat-icon>arrow_back</mat-icon></span>
-        <span class="fs-22 fw-500">Green App</span>
+        <span class="fs-22 fw-500">Chat App</span>
         <span [matMenuTriggerFor]="beforeMenu"><mat-icon>more_vert</mat-icon></span>
         <mat-menu #beforeMenu="matMenu" xPosition="before">
             <button mat-menu-item (click)="logout()"><mat-icon>logout</mat-icon> Logout</button>
             <button mat-menu-item routerLink="/auth/profile-update"><mat-icon>account_circle</mat-icon>Profile</button>
-
-            <!-- <button mat-menu-item>Item 2</button> -->
-          </mat-menu>
+        </mat-menu>
     </div>
 </div>

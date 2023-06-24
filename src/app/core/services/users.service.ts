@@ -20,15 +20,15 @@ export class UsersService {
     this.baseUrl = this._baseService.baseUrl;
   }
 
-  getPage(callingroute: string | undefined, params: any, query: any) {  
+  // getPage(callingroute?: string | undefined, params?: any, query?: any) {  
     
-    if (callingroute == 'all-users') {
-      return this.getAllUserList(query);
-    }
-    else if(callingroute == 'user-detail/:id'){
-      return this.getSingleUser(params.id)
-    }
-  }
+  //   if (callingroute == 'all-users') {
+  //     return this.getAllUserList(query);
+  //   }
+  //   else if(callingroute == 'user-detail/:id'){
+  //     return this.getSingleUser(params.id)
+  //   }
+  // }
 
   // Get All User List API
   getAllUserList(searchQuery?: any) {

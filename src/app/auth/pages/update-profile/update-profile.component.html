@@ -7,7 +7,7 @@
                     <mat-icon>edit</mat-icon>
                 </button>
             </div>
-            <p class="fs-20 fw-600 m-0 line-height-24">Pankaj Kumar</p>
+            <p class="fs-20 fw-600 m-0 line-height-24">{{ userName[0] | titlecase}}</p>
         </div>
         <form [formGroup]="updateProfileForm" (ngSubmit)="updateProfile()">
             <div class="update-profile-wrapper">
